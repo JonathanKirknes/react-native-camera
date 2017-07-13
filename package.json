@@ -1,0 +1,66 @@
+{
+  "_from": "react-native-camera",
+  "_id": "react-native-camera@0.9.4",
+  "_inBundle": false,
+  "_integrity": "sha512-UUpZKh+v42Yl9/o+r1Tr26+Zpla+YL8reMyXrVv3XgOvyRmzywHIErH0Y3pW6Q7WXsUw1zHS01SVc8gX0buHlg==",
+  "_location": "/react-native-camera",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "react-native-camera",
+    "name": "react-native-camera",
+    "escapedName": "react-native-camera",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/react-native-camera/-/react-native-camera-0.9.4.tgz",
+  "_shasum": "054b58a6f002a7cfae3f11f3c220f4ae393e67c0",
+  "_spec": "react-native-camera",
+  "_where": "/Volumes/Work/ReactNative/JustHive/LatestWorking/jh-mobile",
+  "author": {
+    "name": "Lochlan Wansbrough",
+    "email": "lochie@live.com",
+    "url": "http://lwansbrough.com"
+  },
+  "bugs": {
+    "url": "https://github.com/lwansbrough/react-native-camera/issues"
+  },
+  "bundleDependencies": false,
+  "collective": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/react-native-camera",
+    "logo": "https://opencollective.com/opencollective/logo.txt"
+  },
+  "dependencies": {
+    "opencollective": "^1.0.3"
+  },
+  "deprecated": false,
+  "description": "A Camera component for React Native. Also reads barcodes.",
+  "homepage": "https://github.com/lwansbrough/react-native-camera",
+  "keywords": [
+    "react-native",
+    "react",
+    "native",
+    "camera",
+    "qr",
+    "code",
+    "barcode"
+  ],
+  "license": "MIT",
+  "name": "react-native-camera",
+  "nativePackage": true,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lwansbrough/react-native-camera.git"
+  },
+  "scripts": {
+    "postinstall": "opencollective postinstall"
+  },
+  "version": "0.9.4"
+}
