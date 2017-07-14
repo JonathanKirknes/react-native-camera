@@ -49,6 +49,7 @@ public class MutableImage {
                 false
         );
         bitmap.recycle();
+        originalBitmap.recycle();
 
         return transformBitmap;
     }
@@ -278,6 +279,7 @@ public class MutableImage {
         bitmap.compress(Bitmap.CompressFormat.JPEG, quality, outputStream);
 
         try {
+            bitmap.recycle();
             return outputStream.toByteArray();
         } finally {
             try {
