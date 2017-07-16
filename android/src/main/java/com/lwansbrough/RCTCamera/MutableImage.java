@@ -48,8 +48,9 @@ public class MutableImage {
                 m,
                 false
         );
-        bitmap.recycle();
-        originalBitmap.recycle();
+        
+        if (bitmap != null)
+            bitmap.recycle();
 
         return transformBitmap;
     }
@@ -90,7 +91,10 @@ public class MutableImage {
         if (bitmap == null)
             throw new ImageMutationFailedException("failed to mirror");
 
-        this.currentRepresentation = bitmap;
+        if (bitmap != this.currentRepresentation) {
+            this.currentRepresentation.recycle();
+            this.currentRepresentation = bitmap;
+        }
     }
 
     public void fixOrientation() throws ImageMutationFailedException {
@@ -177,8 +181,11 @@ public class MutableImage {
         if (transformedBitmap == null)
             throw new ImageMutationFailedException("failed to rotate");
 
-        this.currentRepresentation = transformedBitmap;
-        this.hasBeenReoriented = true;
+        if (transformedBitmap != this.currentRepresentation) {
+            this.currentRepresentation.recycle();
+            this.currentRepresentation = transformedBitmap;
+            this.hasBeenReoriented = true;
+        }
     }
 
     public int getWidth() {
@@ -279,7 +286,6 @@ public class MutableImage {
         bitmap.compress(Bitmap.CompressFormat.JPEG, quality, outputStream);
 
         try {
-            bitmap.recycle();
             return outputStream.toByteArray();
         } finally {
             try {
