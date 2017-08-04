@@ -38,7 +38,8 @@
     "logo": "https://opencollective.com/opencollective/logo.txt"
   },
   "dependencies": {
-    "opencollective": "^1.0.3"
+    "opencollective": "^1.0.3",
+    "prop-types": "^15.5.7"
   },
   "deprecated": false,
   "description": "A Camera component for React Native. Also reads barcodes.",
