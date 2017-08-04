@@ -46,11 +46,11 @@ To enable `video recording` feature you have to add the following code to the `A
 3. On Android, you require `buildToolsVersion` of `25.0.2+`. _This should easily and automatically be downloaded by Android Studio's SDK Manager._
 
 ### Mostly automatic install with react-native
-1. `npm install react-native-camera@https://github.com/lwansbrough/react-native-camera.git --save`
+1. `npm install react-native-camera@https://github.com/doubleqliq/react-native-camera.git --save`
 3. `react-native link react-native-camera`
 
 ### Mostly automatic install with CocoaPods
-1. `npm install react-native-camera@https://github.com/lwansbrough/react-native-camera.git --save`
+1. `npm install react-native-camera@https://github.com/doubleqliq/react-native-camera.git --save`
 2. Add the plugin dependency to your Podfile, pointing at the path where NPM installed it:
 ```
 pod 'react-native-camera', path: '../node_modules/react-native-camera'
@@ -59,7 +59,7 @@ pod 'react-native-camera', path: '../node_modules/react-native-camera'
 
 ### Manual install
 #### iOS
-1. `npm install react-native-camera@https://github.com/lwansbrough/react-native-camera.git --save`
+1. `npm install react-native-camera@https://github.com/doubleqliq/react-native-camera.git --save`
 2. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`
 3. Go to `node_modules` ➜ `react-native-camera` and add `RCTCamera.xcodeproj`
 4. In XCode, in the project navigator, select your project. Add `libRCTCamera.a` to your project's `Build Phases` ➜ `Link Binary With Libraries`
